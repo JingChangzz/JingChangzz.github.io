@@ -10,25 +10,21 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <style>
     </style>
+    <script type="text/javascript" src='js/index/jquery.1.7.1.min.js'></script>
+    <script type="text/javascript" src="js/index/index.js"></script>
     <script>
-        function showImg(){
-            $("#images img").each(
-                    function(index, element) {
-                        var bili= document.getElementById("intro").getAttribute("clientHeight");
-                        window.alert(bili);
-                        $(element).css("height",bili);
-                    });
-        }
     </script>
 </head>
-<body onload="showImg()">
+<body>
 <a href="http://fiona23.github.io/blog/2015/08/22/welcomepic/">
     <canvas id="welcome"></canvas>
 </a>
 <div id="home-page" data-ownuser="@fiona23">
-    <div id="intro" style="width: 100%;">
+   <div id="intro" style="width: 100%;">
         <div id="main-white">
-            <section style="padding-top: 13%;" >
+           <section  >
+                <div id="slogan" style="padding: 5%;padding-bottom: 7%" data-text="I'll be stronger"></div>
+
                 <h1 class="title">婧</h1>
 
                 <ul id="navigation">
@@ -77,9 +73,12 @@
 
 </div> <!-- end of home-page -->
 <!--[if lt IE 9]>
+
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<script src='js/index/jquery.1.7.1.min.js'></script>
+<script type="text/javascript" src="js/index/index.js"></script>
 <script type="text/javascript" src="js/util.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>

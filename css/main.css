@@ -34,7 +34,6 @@ canvas {
 }
 #intro section {
     width: 100%;
-    display: table-cell;
     vertical-align: middle;
     height: 100vh;
 }
@@ -184,4 +183,19 @@ footer {
 .not-found {
     width: 500px;
     margin: 100px auto;
+}
+#slogan {
+    text-align: center;
+    font-family: monospace;
+    font-size: 36px;
+    color: #000;
+    line-height: normal;
+    width: 100%;
+    display: block;
+    top:7%;
+}
+#slogan span { color: #ff0 }
+#slogan span.selected {
+    background: #09f;
+    color: #fff;
 }
