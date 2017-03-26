@@ -29,8 +29,8 @@
     }
     .cover {
         display: block;
-        height: 200px;
-        width: 320px;
+        height: 250px;
+        width: 250px;
         margin: 15px auto;
     }
 }

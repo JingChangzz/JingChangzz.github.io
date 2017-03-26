@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/resume/style.css">
+    <link rel="stylesheet" type="text/css" href="css/resume/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/resume/normalize.css">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,36 +23,140 @@
     </script>
 </head>
 <body style="margin:0; padding:0;">
-<div id=" " style="">
+<div >
     <!-- 个人 -->
-    <div id="intro" class=" " style="width: 100%;clear:both">
+    <div id="intro" class=" ">
         <div class="cover atvImg" style="margin: 7%;">
             <div class="atvImg-layer" data-img="img/sky.jpg" style="background-image: url('img/sky.jpg');border-radius: 50%">
                <!-- <img id="imgjing" src="img/sky.jpg" alt="jing" style="margin: 7%;border-radius:50%;height: 300px;width: 300px">
                 -->
             </div>
         </div>
-            <h1 class=" ">张 婧</h1>
+            <h1 >张 婧</h1>
 
             <a href="mailto:jing_chang94@163.com" >jing_chang94@163.com</a>
-
     </div>
-    <!-- 项目
-    <div id="project" class=" " style="width: 100%;clear:both">
-        <img id="" src="img/sky.jpg" alt="jing" style="margin: 7%;border-radius:50%;height: 300px;width: 300px">
-        <h1 class=" ">项 目</h1>
+    <section class="content" style="width: 60%">
+        <div class="grid grid--effect-pollux">
+            <a href="#" class="grid__item grid__item--c1">
+                <div class="stack">
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__figure">
+                        <img class="stack__img" style="" src="img/resume/1.png" alt="Image">
 
-        <a href="mailto:jing_chang94@163.com" >jing_chang94@163.com</a>
-    </div>-->
+                    </div>
+                </div>
+                <div class="grid__item-caption">
+                    <h3 class="grid__item-title">教育经历</h3>
+                    <!-- <div class="column column--left">
+                        <span class="column__text">Period</span>
+                        <span class="column__text">Subjects</span>
+                        <span class="column__text">Result</span>
+                    </div>
+                    <div class="column column--right">
+                        <span class="column__text">2045</span>
+                        <span class="column__text">133456</span>
+                        <span class="column__text">Positive</span>
+                    </div>   -->
+                </div>
+            </a>
+            <a href="#" class="grid__item grid__item--c1">
+                <div class="stack">
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__figure">
+                        <img class="stack__img" src="img/resume/2.png" alt="Image">
+                    </div>
+                </div>
+                <div class="grid__item-caption">
+                    <h3 class="grid__item-title">项目经历</h3>
+                    <!--  <div class="column column--left">
+                        <span class="column__text">Period</span>
+                        <span class="column__text">Subjects</span>
+                        <span class="column__text">Result</span>
+                    </div>
+                    <div class="column column--right">
+                        <span class="column__text">2045</span>
+                        <span class="column__text">133456</span>
+                        <span class="column__text">Positive</span>
+                    </div>  -->
+                </div>
+            </a>
+            <a href="#" class="grid__item grid__item--c1">
+                <div class="stack">
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__deco"></div>
+                    <div class="stack__figure">
+                        <img class="stack__img" style="" src="img/resume/3.png" alt="Image">
+
+                    </div>
+                </div>
+                <div class="grid__item-caption">
+                    <h3 class="grid__item-title">其他</h3>
+                    <!-- <div class="column column--left">
+                        <span class="column__text">Period</span>
+                        <span class="column__text">Subjects</span>
+                        <span class="column__text">Result</span>
+                    </div>
+                    <div class="column column--right">
+                        <span class="column__text">2045</span>
+                        <span class="column__text">133456</span>
+                        <span class="column__text">Positive</span>
+                    </div>   -->
+                </div>
+            </a>
+        </div>
+    </section>
+    <script src="js/resume/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/resume/main.js"></script>
+    <script type="text/javascript" src="js/resume/anime.min.js"></script>
     <script>
         total = document.documentElement.clientHeight;
         colHeight = total - document.getElementById("intro").offsetTop;
         document.getElementById("intro").style.height=colHeight+"px";
-        document.getElementById("project").style.height=colHeight+"px";
+
+        (function() {
+            [].slice.call(document.querySelectorAll('.grid--effect-vega > .grid__item')).forEach(function(stackEl) {
+                new VegaFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-castor > .grid__item')).forEach(function(stackEl) {
+                new CastorFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-hamal > .grid__item')).forEach(function(stackEl) {
+                new HamalFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-polaris > .grid__item')).forEach(function(stackEl) {
+                new PolarisFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-alphard > .grid__item')).forEach(function(stackEl) {
+                new AlphardFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-altair > .grid__item')).forEach(function(stackEl) {
+                new AltairFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function(stackEl) {
+                new RigelFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-canopus > .grid__item')).forEach(function(stackEl) {
+                new CanopusFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-pollux > .grid__item')).forEach(function(stackEl) {
+                new PolluxFx(stackEl);
+            });
+            [].slice.call(document.querySelectorAll('.grid--effect-deneb > .grid__item')).forEach(function(stackEl) {
+                new DenebFx(stackEl);
+            });
+        })();
+
     </script>
-    <script src="js/resume/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/resume/main.js"></script>
-    <script type="text/javascript" src="js/resume/resume.js"></script>
+
     </div>
 </body>
 </html>
