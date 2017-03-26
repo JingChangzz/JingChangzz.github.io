@@ -1,7 +1,9 @@
 #intro{
     height:100%;
-    width: 40%;
     padding: 4em 0;
+    margin-left: 70px;
+    margin-right: 70px;
+
 }
 #project{
     width:100%;
@@ -12,12 +14,16 @@
 
 @media screen and (max-width: 700px) {
     .personal {
-        width : 100%;
         position: relative;
         height: 250px;
         width: 250px;
+        margin: auto;
+        text-align: center !important;
         align:center;
         padding: auto;
         float: none !important;
+    }
+    .content{
+        width : 100% !important;
     }
 }
