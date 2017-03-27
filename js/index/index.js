@@ -112,7 +112,7 @@
 
 $(function(){
   $('#slogan').typer({
-    search: 'stronger',
-    replace: ['powerful', 'easiest', 'stranger']
+    search: 'excellent',
+    replace: ['kind', 'hardworking', 'right-minded']
   })
 })

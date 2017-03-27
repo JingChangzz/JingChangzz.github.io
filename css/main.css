@@ -204,6 +204,7 @@ footer {
     line-height: normal;
     width: 100%;
     display: block;
+    margin-top: 5%;
     top:7%;
 }
 #slogan span { color: #4d90fe;font-family: monospace; }
