@@ -2,17 +2,17 @@ body {
             margin: 0;
             padding: 0;
             font-family: monospace;
-            background: url('/css/wallhaven-449086.jpg') #000 no-repeat;
+            background: url('/css/wallhaven-449086.jpg') #fff no-repeat;
             background-size: 100%;
         }
 #slogan {
     text-align: center;
     font-size: 36px;
-    margin-top: 20%;
-    color: #fff;
+    margin-top: 5%;
+    color: #000;
 }
-#slogan span { color: #ff0 }
+#slogan span { color: #4d90fe }
 #slogan span.selected {
     background: #09f;
-    color: #fff;
+    color: #000;
 }

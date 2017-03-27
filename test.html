@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <title>jQuery文字滚动切换动画特效 -爱编程实例，分享jQuery、html5、css3等插件</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/SuspendedBall.css">
+    <script>
+        $(function () {
+            SuspendedBall.Add();//添加悬浮球
+            SuspendedBall.BoxHtml("<ul class=\"SMenu\">" + $("#MenuInfo").html() + "</ul>");//添加菜单框的内容当然，具体的样式和里面的内容需要自己去写
+            SuspendedBall.Move();//这个就是让悬浮球动起来的方法。为啥单独写个不写到add方法里面呢？因为你可以在页面中直接写入悬浮球的两个div。这个方法里面可以添加一个参数，这个参数是个function。当鼠标抬起的时候会调用到这个方法。
+        });
+    </script>
 </head>
 <body>
 <div id="slogan" data-text="Maybe we'll be stronger"></div>
 <script src='js/index/jquery.1.7.1.min.js'></script>
 <script src="js/index/index.js"></script>
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
-    <p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
-    <p>来源：<a title="html5实例,css3实例,jquery实例" href="http://www.w2bc.com/shili" target="_blank">html5实例,css3实例,jquery实例</a></p>
-</div>
-<script src="http://www.w2bc.com/scripts/2bc/_gg_980_90.js" type="text/javascript"></script></body>
+<script src="js/index/SuspendedBall.js"></script>
+<script src="js/index/PublicJs.js"></script>
+</body>
 </html>
