@@ -6,7 +6,7 @@
             search: '',
             replace: [],
             speed: 60,
-            delay: 1000
+            delay: 2000
         }, options);
         
         var bintext = function(length){
