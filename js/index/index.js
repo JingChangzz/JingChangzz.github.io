@@ -5,7 +5,7 @@
         var defaults = $.extend({
             search: '',
             replace: [],
-            speed: 60,
+            speed: 40,
             delay: 2000
         }, options);
         
