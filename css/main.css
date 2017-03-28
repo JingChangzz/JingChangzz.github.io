@@ -160,9 +160,6 @@ footer {
 }
 
 /*about*/
-.about-wrapper {
-    overflow: hidden;
-}
 .about-section {
     width: 50%;
     float: left;
@@ -211,4 +208,34 @@ footer {
 #slogan span.selected {
     background: #09f;
     color: #fff;
+}
+
+.navbar-nav > li > a {
+    background-color: transparent;
+    color: #505050;
+    font-size: 1.1em;
+}
+.navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: #4d90fe;
+}
+.navbar-nav > li > a:visited, .navbar-nav > li > a:focus, .navbar-nav > li > a:active {
+    background-color: transparent;
+}
+.navbar-toggle {
+    border: 0 none;
+}
+.icon-bar {
+    background: #505050 none repeat scroll 0 0;
+}
+@media (max-width: 767px) {
+    .navbar .navbar-collapse {
+        float: none !important;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .navbar .navbar-collapse ul {
+        float: none !important;
+    }
 }

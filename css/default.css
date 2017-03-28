@@ -39,10 +39,10 @@ a:visited {
   color: #464646;
 }
 a:hover {
-  color: #d95e45;
+  color: #4d90fe;
 }
 a.inline-link:link, a.inline-link:visited {
-  color: #d95e45;
+  color: #4d90fe;
   font-weight: bolder;
 }
 a.inline-link:hover {
