@@ -113,6 +113,6 @@
 $(function(){
   $('#slogan').typer({
     search: 'excellent',
-    replace: ['kind', 'hardworking', 'right-minded']
+    replace: ['kind', 'hardworking']
   })
 })
