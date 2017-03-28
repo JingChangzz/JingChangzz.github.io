@@ -228,13 +228,13 @@ footer {
 .icon-bar {
     background: #505050 none repeat scroll 0 0;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .navbar .navbar-collapse {
         float: none !important;
         width: 100%;
     }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .navbar .navbar-collapse ul {
         float: none !important;
     }
