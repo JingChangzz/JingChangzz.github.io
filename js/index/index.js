@@ -5,8 +5,8 @@
         var defaults = $.extend({
             search: '',
             replace: [],
-            speed: 40,
-            delay: 2000
+            speed: 50,
+            delay: 3000
         }, options);
         
         var bintext = function(length){
