@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Jynne
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Jynne Chang
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: hexo/
+url: https://jingchangzz.github.io/hexo
+root: /hexo/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
